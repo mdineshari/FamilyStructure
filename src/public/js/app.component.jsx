@@ -1,5 +1,7 @@
 import React from 'react';
-import HeaderComponent from './header/header.component.jsx'
+import HeaderComponent from './Components/header/header.component.jsx';
+import './app.less';
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -9,7 +11,7 @@ class App extends React.Component {
         return (
             <div>
                 <HeaderComponent />
-                Hello!!!!
+                {this.props.children}
             </div>
         )
     }
