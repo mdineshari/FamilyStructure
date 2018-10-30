@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, BrowserRouter as Router, Switch  } from 'react-router-dom'
 import App from './Components/App.jsx';
-import Notfound from './NotFound/notFound.jsx';
+import Notfound from './Components/NotFound/notFound.jsx';
 
 ReactDOM.render(
     <Router>
