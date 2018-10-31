@@ -4,10 +4,28 @@
         <title>Test APP</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css" />
     </head>
     <body>
         <div id="root"></div>
+        <script src="vendor/jquery-1.11.1.min.js"></script>
+        <script src="vendor/bootstrap.min.js"></script>
         <script src="js/bundle.js"></script>
     </body>
-
+    <script>
+     $('#login-form-link').click(function(e) {
+		$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+	$('#register-form-link').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+    });
+    </script>
 </html>
